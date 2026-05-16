@@ -4,13 +4,5 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(),tailwindcss()],
-   server: {
-    watch: {
-      usePolling: true,  // 👈 add this
-    },
-  },
-  optimizeDeps: {
-    force: true,          // 👈 clear dep cache on every start
-  },
+  plugins: [react(),tailwindcss()]
 })
