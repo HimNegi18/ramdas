@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+}
+
+@layer base {
+  :root {
+    /*colors*/
+    --color-primary: #991b1b;
+    --color-primary-hover: #03a9f5;
+    --color-bg: #ffffff;
+    --color-text: #000000;
+
+    /*radius*/
+    --radius-sm: 5px;
+    --radius-md: 8px;
+    --radius-lg: 10px;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue",
+      sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+    display: block;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+@layer components {
+  .container {
+    @apply w-full mx-auto px-4 md:px-8 lg:px-16 max-w-[1280px];
+  }
+  .text-red {
+    color: var(--color-primary);
+  }
+  .bg-red {
+    background-color: var(--color-primary);
+  }
+  .nav-link {
+    @apply relative text-[#003152] pb-0.5
+             after:content-[''] after:absolute after:bottom-0 after:left-0
+            after:w-0 after:h-0.5 after:bg-(--color-primary) after:transition-all after:duration-300
+            hover:after:w-full;
+  }
+  .border-animation {
+    @apply relative border border-[#d5d5d5]
+            /* Top Left Corner */
+            before:content-[''] before:absolute before:bottom-0 before:right-0 before:w-8 before:h-12 before:border-b-2 before:border-r-2 before:border-[#991b1b] before:transition-all before:duration-500 hover:before:w-[95%] hover:before:h-[90%]
+            /* Bottom Right Corner */
+            after:content-[''] after:absolute after:top-0 after:left-0  after:w-12 after:h-8 after:border-t-2 after:border-l-2 after:border-[#991b1b] after:transition-all after:duration-500 hover:after:w-[95%] hover:after:h-[90%];
+  }
+  /* Inactive dot */
+  .custom-pagination .swiper-pagination-bullet {
+    width: 6px !important;
+    height: 6px !important;
+    background-color: #bfbfbf !important;
+    opacity: 1 !important;
+    border-radius: 9999px !important;
+    transition: all 0.3s !important;
+    cursor: pointer !important;
+  }
+
+  /* Active dot */
+  .custom-pagination .swiper-pagination-bullet-active {
+    background-color: #252525 !important;
+    border-radius: 9999px !important; /* stretches into a pill */
+  }
+
+  .pop-in {
+    animation: popIn 1s ease-in-out;
+  }
+
+  .custom-btn {
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  /* color: #fff; */
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.6s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.5), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+}
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
