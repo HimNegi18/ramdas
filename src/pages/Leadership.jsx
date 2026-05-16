@@ -3,7 +3,7 @@ import directorImg from "../assets/images/gridhar.png";
 import ekta from "../assets/images/ekta.png";
 import sneha from "../assets/images/sneha.png";
 import narendra from "../assets/images/narendra.png";
-import priya from "../assets/images/priya.png";
+import priya from "../assets/images/Priya.png";
 const team = [
   {
     image: ekta,
