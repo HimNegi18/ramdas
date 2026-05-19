@@ -32,6 +32,7 @@ const CompanyOverview = ({height, image}) => {
                lg:hover:pt-0 lg:hover:pr-0
                transition-all duration-300 ease-in
                cursor-pointer"
+          loading="lazy"
         />
       </div>
 

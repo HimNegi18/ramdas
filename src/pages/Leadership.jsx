@@ -74,6 +74,7 @@ const Leadership = () => {
               src={directorImg}
               alt="Girdhari Tulsani"
               className="relative w-full h-full object-cover rounded-lg cursor-pointer"
+              loading="lazy"
             />
           </div>
         </div>

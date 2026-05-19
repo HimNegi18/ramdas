@@ -35,8 +35,8 @@ const Awards = () => {
             <img
               src={award.image}
               alt={award.alt}
-              className="w-full h-full object-fill bg-white rounded-[20px]
-               "
+              className="w-full h-full object-fill bg-white rounded-[20px]"
+              loading="lazy"
             />
           </div>
         ))}

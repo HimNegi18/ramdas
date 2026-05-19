@@ -55,18 +55,13 @@ const Clientele = () => {
         {clients.map((client, index) => (
           <SwiperSlide key={index}>
             {({ isActive }) => (
-              // <div className={`flex items-center justify-center bg-white rounded-lg p-6
-              //                  transition-all duration-300 cursor-pointer
-              //                  ${isActive
-              //                   ? "shadow-xl scale-110 z-10"
-              //                   : "shadow-sm scale-95 opacity-60"
-              //                  }`}>
                 <div className='flex items-center justify-center py-10 px-2 md:px-4'>
                 <img
                   src={client.image}
                   alt={client.alt}
                   className="shadow-2xl py-14 px-10 lg:w-[200px] w-[350px] cursor-pointer
                   hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
                 />
               </div>
             )}

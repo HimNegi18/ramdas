@@ -64,6 +64,7 @@ const OurServices = () => {
               src={service.icon}
               alt={service.title}
               className="bg-[#8b1d1d] w-25 h-24 p-2 mx-auto mb-3 rounded-lg flex items-center justify-center"
+              loading="lazy"
             />
             <h3 className="text-sm font-semibold text-[#6f6f6f] mb-2.5 flex items-center justify-center">
               {service.title}
@@ -87,6 +88,7 @@ const OurServices = () => {
               src={service.icon}
               alt={service.title}
               className="bg-[#8b1d1d] w-25 h-24 p-2 mx-auto mb-3 rounded-lg flex items-center justify-center"
+              loading="lazy"
             />
 
             <h3 className="text-sm font-semibold text-[#6f6f6f] mb-2.5 flex items-center justify-center">

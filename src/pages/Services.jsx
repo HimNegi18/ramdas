@@ -104,6 +104,7 @@ const ServiceCard = ({ title, desc, images, imageLeft, link }) => {
                 src={img}
                 alt={`${title} ${index + 1}`}
                 className="w-full h-full object-cover rounded-lg"
+                loading="lazy"
               />
             </SwiperSlide>
           ))}

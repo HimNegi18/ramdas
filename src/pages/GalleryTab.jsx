@@ -10,6 +10,7 @@ const GalleryTab = () => {
               src={img3}
               alt="tree plantation"
               className="h-[300px] w-[400px] object-cover"
+              loading="lazy"
             />
 
           <p className="text-center my-3 font-bold">
@@ -29,6 +30,7 @@ const GalleryTab = () => {
               src={img8}
               alt="RPL Cricket Tournament 2026"
               className="h-[300px] w-[400px] object-cover"
+              loading="lazy"
             />
 
           <p className="text-center my-3 font-bold">

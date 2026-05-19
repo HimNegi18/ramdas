@@ -73,7 +73,7 @@ const BenefitsOfServices = () => {
 
       </section>
 
-      <img src={map} alt="India Map" className="w-full h-auto pop-in" />
+      <img src={map} alt="India Map" className="w-full h-auto pop-in" loading="lazy" />
     </>
   )
 }
