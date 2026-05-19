@@ -39,7 +39,7 @@ const Clientele = () => {
 
       <Swiper
         modules={[Autoplay, Pagination]}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        autoplay={{ delay: 1500, disableOnInteraction: false }}
         pagination={{ clickable: true, el: ".custom-pagination" }}
         loop
         slidesPerView={1}

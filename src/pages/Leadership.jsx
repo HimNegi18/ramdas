@@ -18,12 +18,12 @@ const team = [
   {
     image: narendra,
     name: "Narendra Khemani",
-    role: "(General Manager – Warehouse Operations)",
+    role: "General Manager - (Warehouse Operations)",
   },
   {
     image: priya,
     name: "Priya Sengunthar",
-    role: "(General Manager - Client Operations)",
+    role: "General Manager - (Client Operations)",
   },
 ];
 

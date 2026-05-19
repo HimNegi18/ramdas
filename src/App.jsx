@@ -7,7 +7,6 @@ import Contact from "./pages/Contact";
 import Careers from "./pages/Careers";
 import Clientele from "./pages/Clientele";
 import Infrastructure from "./pages/Infrastructure";
-import Gallery from "./pages/Gallery";
 import CompanyOverview from "./pages/CompanyOverview";
 import Leadership from "./pages/Leadership";
 import VisionMission from "./pages/VisionMission";
@@ -15,6 +14,10 @@ import OurJourney from "./pages/OurJourney";
 import Awards from "./pages/Awards";
 import ServiceList from "./pages/ServicesList";
 import ScrollToTop from "./components/ScrollToTop";
+import Gallery from "./pages/Gallery";
+import GalleryTab from "./pages/GalleryTab";
+import Rpl from "./pages/Rpl";
+import TreePlantation from "./pages/TreePlantation";
 
 const cfaFeatures = {
   heading: "Carrying & Forwarding Agent Services",
@@ -214,7 +217,11 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/clientele" element={<Clientele />} />
         <Route path="/infrastructure" element={<Infrastructure />} />
-        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/gallery" element={<Gallery />} >
+          <Route index element={<GalleryTab />} />
+          <Route path="rpl" element={<Rpl />} />
+          <Route path="tree-plantation" element={<TreePlantation />} />
+        </Route>
         <Route path="/careers" element={<Careers />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/Carrying-&-Forwarding-Agent-Services" element={<ServiceList lists={cfaFeatures} />} />

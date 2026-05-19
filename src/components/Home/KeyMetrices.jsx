@@ -4,7 +4,7 @@ import { FaTruck, FaFileInvoice, FaBoxes, FaMapMarkerAlt } from "react-icons/fa"
 const metrics = [
   {
     icon: <FaTruck size={75} />,
-    target: 100000,
+    target: 130000,
     startFrom: 99900,
     suffix: "+",
     label: "Gross Volume Shippers Delivered per month",
