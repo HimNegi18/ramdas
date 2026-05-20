@@ -5,12 +5,12 @@ import "lightgallery/css/lg-thumbnail.css";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
 
-import img2 from "../assets/images/gallery/img2.JPG";
-import img4 from "../assets/images/gallery/img4.JPG";
-import img6 from "../assets/images/gallery/img6.JPG";
-import img8 from "../assets/images/gallery/img8.JPG";
-import img10 from "../assets/images/gallery/img10.JPG";
-import img11 from "../assets/images/gallery/img11.JPG";
+import img2 from "../assets/images/gallery/img2.webp";
+import img4 from "../assets/images/gallery/img4.webp";
+import img6 from "../assets/images/gallery/img6.webp";
+import img8 from "../assets/images/gallery/img8.webp";
+import img10 from "../assets/images/gallery/img10.webp";
+import img11 from "../assets/images/gallery/img11.webp";
 
 const images = [
   { src: img2 },

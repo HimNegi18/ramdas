@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import img3 from "../assets/images/gallery/img3.jpeg";
-import img8 from "../assets/images/gallery/img8.JPG";
+import img3 from "../assets/images/gallery/img3.webp";
+import img8 from "../assets/images/gallery/img8.webp";
 
 const GalleryTab = () => {
   return (

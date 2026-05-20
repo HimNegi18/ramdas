@@ -7,11 +7,11 @@ import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
 
 
-import img1 from "../assets/images/gallery/img1.jpeg"
-import img3 from "../assets/images/gallery/img3.jpeg"
-import img5 from "../assets/images/gallery/img5.jpeg"
-import img7 from "../assets/images/gallery/img7.jpeg"
-import img9 from "../assets/images/gallery/img9.jpeg"
+import img1 from "../assets/images/gallery/img1.webp"
+import img3 from "../assets/images/gallery/img3.webp"
+import img5 from "../assets/images/gallery/img5.webp"
+import img7 from "../assets/images/gallery/img7.webp"
+import img9 from "../assets/images/gallery/img9.webp"
 
 const images = [
   { src: img1 },
