@@ -1,13 +1,13 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay, Pagination, Navigation } from 'swiper/modules'
+import { Autoplay, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
 // Import your background images
-import herobanner1 from '../../assets/images/herobanner1.jpeg'
-import herobanner2 from '../../assets/images/herobanner2.jpg'
-import herobanner3 from '../../assets/images/herobanner3.jpg'
+import herobanner1 from '../../assets/images/herobanner1.webp'
+import herobanner2 from '../../assets/images/herobanner2.webp'
+import herobanner3 from '../../assets/images/herobanner3.webp'
 import { Link } from 'react-router-dom'
 
 const slides = [
